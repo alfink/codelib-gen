@@ -17,19 +17,19 @@
  *
  */
 
-#ifndef ART_ENV_CODELIB_H_
-#define ART_ENV_CODELIB_H_
+#ifndef ART_MODULES_CHANGEME_CODELIB_H_
+#define ART_MODULES_CHANGEME_CODELIB_H_
+
 
 #include <string>
 #include <unordered_set>
+#include "optimizing/artist/env/codelib.h"
+
+using std::string;
+using std::unordered_set;
+
 
 namespace art {
 
-class CodeLib {
- public:
-  static const std::unordered_set<std::string>& GetMethods() {
-    return METHODS;
-  };
-
- public:
-  // CODE_GENERATOR ////////////////////////////////////////////////////////////////////////////////////////////////////
+    class ModuleCodeLib : public CodeLib {
+    public:
